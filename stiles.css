@@ -1,3 +1,6 @@
+body {
+  padding-bottom: 100px;
+}
 .topcon {
   margin-top: 100px !important;
 }
@@ -12,4 +15,13 @@ h2 {
 h3 {
   text-align: center;
   color: thistle;
+}
+p {
+  text-align: left;
+}
+.btn {
+  display: block !important;
+  background-color: thistle !important;
+  color: aliceblue !important;
+  text-align: center !important;
 }
