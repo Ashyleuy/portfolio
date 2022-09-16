@@ -1,4 +1,10 @@
+:root {
+  --primary-color: aliceblue;
+  --secondary-color: thistle;
+  --box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.2);
+}
 body {
+  margin-top: 100px !important;
   padding-bottom: 100px;
 }
 .topcon {
@@ -9,19 +15,43 @@ h1 {
   text-align: center;
 }
 h2 {
+  text-align: left;
   font-size: 3em !important;
-  text-align: center;
 }
 h3 {
   text-align: center;
-  color: thistle;
+  color: var(--secondary-color);
 }
 p {
   text-align: left;
 }
+
 .btn {
-  display: block !important;
-  background-color: thistle !important;
-  color: aliceblue !important;
+  background-color: var(--secondary-color) !important;
+  color: white !important;
   text-align: center !important;
+  display: table-cell;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 1.25em 1em;
+  border-radius: 0.25em;
+  box-shadow: var(--box-shadow);
+}
+@media (max-width: 991.5px) {
+  h2 {
+    text-align: center;
+  }
+  p {
+    display: block;
+    text-align: center !important;
+    font-size: 0.75em !important;
+  }
+  .btn {
+    display: block !important;
+    text-align: center;
+  }
+}
+.email-link {
+  color: thistle;
+  text-decoration: underline;
 }
