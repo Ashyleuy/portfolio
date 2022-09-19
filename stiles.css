@@ -1,6 +1,7 @@
 :root {
   --primary-color: aliceblue;
   --secondary-color: thistle;
+  --third-color: #343a40;
   --box-shadow: 0 0.3em 0.5em rgba(0, 0, 0, 0.2);
 }
 body {
@@ -37,6 +38,9 @@ p {
   border-radius: 0.25em;
   box-shadow: var(--box-shadow);
 }
+.btn:hover {
+  background-color: var(--third-color) !important;
+}
 @media (max-width: 991.5px) {
   h2 {
     text-align: center;
@@ -54,4 +58,20 @@ p {
 .email-link {
   color: thistle;
   text-decoration: underline;
+}
+.email-link:hover {
+  color: var(--third-color);
+}
+.footer-list {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 85px;
+  font-size: 30px;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.footer-icon {
+  padding: 30px;
 }
