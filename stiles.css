@@ -65,6 +65,9 @@ p {
     display: block !important;
     text-align: center;
   }
+  h1 {
+    font-size: 4em !important;
+  }
 }
 .email-link {
   color: thistle;
